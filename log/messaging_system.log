@@ -1,1 +1,49 @@
 2024-07-12 20:06:24 - Requested
+2024-07-12 20:49:09,706 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-12 20:49:09,706 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-12 20:49:09,712 - INFO -  * Restarting with stat
+2024-07-12 20:49:10,460 - WARNING -  * Debugger is active!
+2024-07-12 20:49:10,461 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 20:49:14,812 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:14,813 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:14] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:16,628 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:16,628 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:16] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:17,092 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:17,093 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:17] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:17,274 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:17,275 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:17] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:17,571 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:17,572 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:17] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:17,725 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:17,725 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:17] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:30,010 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:30,011 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:30] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:49:35,393 - INFO - Talk to Me endpoint accessed.
+2024-07-12 20:49:35,393 - INFO - 127.0.0.1 - - [12/Jul/2024 20:49:35] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 20:50:27,320 - INFO - 127.0.0.1 - - [12/Jul/2024 20:50:27] "[35m[1mGET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1[0m" 500 -
+2024-07-12 20:50:27,414 - INFO - 127.0.0.1 - - [12/Jul/2024 20:50:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-12 20:54:30,052 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 20:54:30,095 - INFO -  * Restarting with stat
+2024-07-12 20:54:31,099 - WARNING -  * Debugger is active!
+2024-07-12 20:54:31,100 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 20:54:41,623 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 20:54:41,669 - INFO -  * Restarting with stat
+2024-07-12 20:54:42,651 - WARNING -  * Debugger is active!
+2024-07-12 20:54:42,652 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 21:02:06,722 - INFO - Talk to Me endpoint accessed.
+2024-07-12 21:02:06,723 - INFO - 127.0.0.1 - - [12/Jul/2024 21:02:06] "GET /talktome HTTP/1.1" 200 -
+2024-07-12 21:02:34,016 - INFO - 127.0.0.1 - - [12/Jul/2024 21:02:34] "[35m[1mGET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1[0m" 500 -
+2024-07-12 21:02:34,257 - INFO - 127.0.0.1 - - [12/Jul/2024 21:02:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-12 21:11:32,503 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 21:11:32,562 - INFO -  * Restarting with stat
+2024-07-12 21:11:33,624 - WARNING -  * Debugger is active!
+2024-07-12 21:11:33,624 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 21:11:56,852 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 21:11:56,926 - INFO -  * Restarting with stat
+2024-07-12 21:11:58,022 - WARNING -  * Debugger is active!
+2024-07-12 21:11:58,023 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 21:12:18,149 - INFO - 127.0.0.1 - - [12/Jul/2024 21:12:18] "GET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1" 200 -
+2024-07-12 21:12:53,178 - INFO - 127.0.0.1 - - [12/Jul/2024 21:12:53] "GET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.1" 200 -
