@@ -185,3 +185,41 @@
 2024-07-13 09:21:03,971 - INFO -  * Restarting with stat
 2024-07-13 09:21:04,443 - WARNING -  * Debugger is active!
 2024-07-13 09:21:04,444 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:54:10,387 - INFO - 127.0.0.1 - - [13/Jul/2024 09:54:10] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 09:58:37,708 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/config.py', reloading
+2024-07-13 09:58:37,809 - INFO -  * Restarting with stat
+2024-07-13 09:58:38,222 - WARNING -  * Debugger is active!
+2024-07-13 09:58:38,223 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 10:29:54,082 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 10:29:54,157 - INFO -  * Restarting with stat
+2024-07-13 10:29:54,713 - WARNING -  * Debugger is active!
+2024-07-13 10:29:54,715 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 10:29:55,861 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 10:29:55,976 - INFO -  * Restarting with stat
+2024-07-13 10:29:56,670 - WARNING -  * Debugger is active!
+2024-07-13 10:29:56,672 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 10:29:57,839 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 10:29:57,925 - INFO -  * Restarting with stat
+2024-07-13 10:34:14,144 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 10:34:14,145 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 10:34:14,146 - INFO -  * Restarting with stat
+2024-07-13 10:34:14,385 - WARNING -  * Debugger is active!
+2024-07-13 10:34:14,387 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 10:34:23,829 - INFO - 127.0.0.1 - - [13/Jul/2024 10:34:23] "[35m[1mGET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1[0m" 202 -
+2024-07-13 10:46:25,908 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 10:46:25,908 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 10:46:25,910 - INFO -  * Restarting with stat
+2024-07-13 10:46:26,181 - WARNING -  * Debugger is active!
+2024-07-13 10:46:26,183 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 10:46:43,307 - INFO - 127.0.0.1 - - [13/Jul/2024 10:46:43] "GET / HTTP/1.1" 200 -
+2024-07-13 10:46:48,889 - INFO - 127.0.0.1 - - [13/Jul/2024 10:46:48] "GET / HTTP/1.1" 200 -
+2024-07-13 10:48:38,504 - INFO - 127.0.0.1 - - [13/Jul/2024 10:48:38] "GET / HTTP/1.0" 200 -
+2024-07-13 10:48:48,063 - INFO - 127.0.0.1 - - [13/Jul/2024 10:48:48] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 10:49:27,208 - INFO - 127.0.0.1 - - [13/Jul/2024 10:49:27] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 10:50:22,127 - INFO - 127.0.0.1 - - [13/Jul/2024 10:50:22] "[35m[1mGET /sendmail?recipient=destiny@destinedcodes.com HTTP/1.0[0m" 202 -
