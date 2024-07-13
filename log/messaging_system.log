@@ -231,3 +231,15 @@
 2024-07-13 12:26:54,800 - INFO - 127.0.0.1 - - [13/Jul/2024 12:26:54] "[35m[1mGET /sendmail?recipient=destiny@destinycodes.com HTTP/1.0[0m" 202 -
 2024-07-13 12:29:17,574 - INFO - 127.0.0.1 - - [13/Jul/2024 12:29:17] "GET / HTTP/1.0" 200 -
 2024-07-13 12:29:20,048 - INFO - 127.0.0.1 - - [13/Jul/2024 12:29:20] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 17:52:26,287 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 17:52:26,287 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 17:52:26,289 - INFO -  * Restarting with stat
+2024-07-13 17:52:26,536 - WARNING -  * Debugger is active!
+2024-07-13 17:52:26,600 - INFO -  * Debugger PIN: 116-697-555
+2024-07-13 17:54:39,796 - INFO - 127.0.0.1 - - [13/Jul/2024 17:54:39] "[35m[1mGET /sendmail?recipient=destiny@destinedcodes.com HTTP/1.0[0m" 202 -
+2024-07-13 18:03:13,445 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:13] "[35m[1mGET /sendmail?recipient=destiny@destinycodes.com HTTP/1.0[0m" 202 -
+2024-07-13 18:03:13,998 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:13] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 18:03:21,298 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:21] "GET / HTTP/1.0" 200 -
