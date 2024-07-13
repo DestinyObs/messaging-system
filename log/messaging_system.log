@@ -148,3 +148,40 @@
 2024-07-13 08:27:10,151 - INFO - 127.0.0.1 - - [13/Jul/2024 08:27:10] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
 2024-07-13 08:31:38,386 - INFO - 127.0.0.1 - - [13/Jul/2024 08:31:38] "[35m[1mGET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1[0m" 202 -
 2024-07-13 08:31:38,414 - INFO - 127.0.0.1 - - [13/Jul/2024 08:31:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-13 08:43:08,441 - INFO - 127.0.0.1 - - [13/Jul/2024 08:43:08] "GET / HTTP/1.0" 200 -
+2024-07-13 08:43:22,116 - INFO - 127.0.0.1 - - [13/Jul/2024 08:43:22] "GET / HTTP/1.0" 200 -
+2024-07-13 08:43:22,659 - INFO - 127.0.0.1 - - [13/Jul/2024 08:43:22] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 08:45:03,744 - INFO - 127.0.0.1 - - [13/Jul/2024 08:45:03] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:51:40,753 - INFO - 127.0.0.1 - - [13/Jul/2024 08:51:40] "GET / HTTP/1.0" 200 -
+2024-07-13 08:52:53,345 - INFO - 127.0.0.1 - - [13/Jul/2024 08:52:53] "GET / HTTP/1.0" 200 -
+2024-07-13 08:52:54,109 - INFO - 127.0.0.1 - - [13/Jul/2024 08:52:54] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 09:00:55,022 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/config.py', reloading
+2024-07-13 09:00:55,178 - INFO -  * Restarting with stat
+2024-07-13 09:00:55,680 - WARNING -  * Debugger is active!
+2024-07-13 09:00:55,682 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:03:15,832 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 09:03:15,872 - INFO -  * Restarting with stat
+2024-07-13 09:03:16,268 - WARNING -  * Debugger is active!
+2024-07-13 09:03:16,270 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:03:18,447 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 09:03:18,485 - INFO -  * Restarting with stat
+2024-07-13 09:03:18,718 - WARNING -  * Debugger is active!
+2024-07-13 09:03:18,719 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:03:20,890 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 09:03:20,926 - INFO -  * Restarting with stat
+2024-07-13 09:03:21,186 - WARNING -  * Debugger is active!
+2024-07-13 09:03:21,187 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:04:02,662 - INFO - 127.0.0.1 - - [13/Jul/2024 09:04:02] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 09:04:05,086 - INFO - 127.0.0.1 - - [13/Jul/2024 09:04:05] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 09:04:21,418 - INFO - 127.0.0.1 - - [13/Jul/2024 09:04:21] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 09:07:36,542 - INFO - 127.0.0.1 - - [13/Jul/2024 09:07:36] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 09:07:37,048 - INFO - 127.0.0.1 - - [13/Jul/2024 09:07:37] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 09:11:23,579 - INFO - 127.0.0.1 - - [13/Jul/2024 09:11:23] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 09:20:54,661 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 09:20:54,781 - INFO -  * Restarting with stat
+2024-07-13 09:20:55,435 - WARNING -  * Debugger is active!
+2024-07-13 09:20:55,437 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 09:21:03,900 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/config.py', reloading
+2024-07-13 09:21:03,971 - INFO -  * Restarting with stat
+2024-07-13 09:21:04,443 - WARNING -  * Debugger is active!
+2024-07-13 09:21:04,444 - INFO -  * Debugger PIN: 343-796-946

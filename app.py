@@ -204,20 +204,12 @@
 
 from flask import Flask, request
 import logging
+import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
-import os
 from config import SMTP_HOST, SMTP_USER, SMTP_PASSWORD, EMAILS_FROM_EMAIL, SMTP_TLS, SMTP_SSL, SMTP_PORT
 from celery import Celery
-from celery import shared_task
-
-@shared_task
-def send_email(recipient):
-    print(f"Sending email to {recipient}")
-    # Placeholder for actual email sending logic
-    return f"Email task simulated for {recipient}"
-
 
 app = Flask(__name__)
 
@@ -235,10 +227,6 @@ celery = Celery(
 
 # Update the Celery configuration with the Flask app's config
 celery.conf.update(app.config)
-
-
-# Ensure Celery knows about our tasks
-celery.autodiscover_tasks(['tasks'], force=True)
 
 @app.route('/')
 def index():
@@ -265,7 +253,12 @@ def send_email_task(recipient):
 
     try:
         server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
-        server.starttls() if SMTP_TLS else server.startssl()
+        if SMTP_TLS:
+            server.starttls()
+        elif SMTP_SSL:
+            server = smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT)
+        else:
+            server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
         server.login(SMTP_USER, password)
         server.send_message(message)
         server.quit()
