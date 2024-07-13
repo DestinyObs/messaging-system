@@ -47,3 +47,71 @@
 2024-07-12 21:11:58,023 - INFO -  * Debugger PIN: 194-379-434
 2024-07-12 21:12:18,149 - INFO - 127.0.0.1 - - [12/Jul/2024 21:12:18] "GET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1" 200 -
 2024-07-12 21:12:53,178 - INFO - 127.0.0.1 - - [12/Jul/2024 21:12:53] "GET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.1" 200 -
+2024-07-12 22:44:32,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-12 22:44:32,258 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-12 22:44:32,266 - INFO -  * Restarting with stat
+2024-07-12 22:44:33,720 - WARNING -  * Debugger is active!
+2024-07-12 22:44:33,723 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:44:55,391 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-12 22:44:55,391 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-12 22:44:55,398 - INFO -  * Restarting with stat
+2024-07-12 22:44:56,915 - WARNING -  * Debugger is active!
+2024-07-12 22:44:56,915 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:45:12,245 - INFO - 127.0.0.1 - - [12/Jul/2024 22:45:12] "GET / HTTP/1.1" 200 -
+2024-07-12 22:49:52,572 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/tasks.py', reloading
+2024-07-12 22:49:52,613 - INFO -  * Restarting with stat
+2024-07-12 22:49:54,130 - WARNING -  * Debugger is active!
+2024-07-12 22:49:54,131 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:50:40,903 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:50:40,990 - INFO -  * Restarting with stat
+2024-07-12 22:50:43,245 - WARNING -  * Debugger is active!
+2024-07-12 22:50:43,246 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:50:45,826 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:50:45,873 - INFO -  * Restarting with stat
+2024-07-12 22:50:47,596 - WARNING -  * Debugger is active!
+2024-07-12 22:50:47,596 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:50:57,708 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:50:57,762 - INFO -  * Restarting with stat
+2024-07-12 22:50:59,414 - WARNING -  * Debugger is active!
+2024-07-12 22:50:59,414 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:51:29,051 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:51:29,092 - INFO -  * Restarting with stat
+2024-07-12 22:51:30,797 - WARNING -  * Debugger is active!
+2024-07-12 22:51:30,798 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:51:32,971 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:51:33,050 - INFO -  * Restarting with stat
+2024-07-12 22:51:35,427 - WARNING -  * Debugger is active!
+2024-07-12 22:51:35,428 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:51:49,275 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-12 22:51:49,320 - INFO -  * Restarting with stat
+2024-07-12 22:51:50,876 - WARNING -  * Debugger is active!
+2024-07-12 22:51:50,877 - INFO -  * Debugger PIN: 194-379-434
+2024-07-12 22:54:17,822 - INFO - 127.0.0.1 - - [12/Jul/2024 22:54:17] "GET / HTTP/1.1" 200 -
+2024-07-12 22:54:18,438 - INFO - 127.0.0.1 - - [12/Jul/2024 22:54:18] "GET / HTTP/1.1" 200 -
+2024-07-12 22:54:18,616 - INFO - 127.0.0.1 - - [12/Jul/2024 22:54:18] "GET / HTTP/1.1" 200 -
+2024-07-12 22:55:14,975 - INFO - 127.0.0.1 - - [12/Jul/2024 22:55:14] "GET /talktome HTTP/1.1" 200 -
+2024-07-13 07:30:37,824 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 07:30:37,825 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 07:30:37,826 - INFO -  * Restarting with stat
+2024-07-13 07:30:38,076 - WARNING -  * Debugger is active!
+2024-07-13 07:30:38,146 - INFO -  * Debugger PIN: 566-806-285
+2024-07-13 07:30:45,200 - INFO - 127.0.0.1 - - [13/Jul/2024 07:30:45] "GET / HTTP/1.1" 200 -
+2024-07-13 07:30:45,367 - INFO - 127.0.0.1 - - [13/Jul/2024 07:30:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-13 07:31:56,018 - INFO - 127.0.0.1 - - [13/Jul/2024 07:31:56] "GET /talktome HTTP/1.1" 200 -
+2024-07-13 07:32:27,742 - INFO - 127.0.0.1 - - [13/Jul/2024 07:32:27] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.1[0m" 202 -
+2024-07-13 07:32:27,897 - INFO - 127.0.0.1 - - [13/Jul/2024 07:32:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-13 07:32:29,947 - INFO - 127.0.0.1 - - [13/Jul/2024 07:32:29] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.1[0m" 202 -
+2024-07-13 07:32:31,773 - INFO - 127.0.0.1 - - [13/Jul/2024 07:32:31] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.1[0m" 202 -
+2024-07-13 07:39:55,943 - INFO - 127.0.0.1 - - [13/Jul/2024 07:39:55] "GET /talktome HTTP/1.1" 200 -
+2024-07-13 07:39:56,804 - INFO - 127.0.0.1 - - [13/Jul/2024 07:39:56] "GET /talktome HTTP/1.1" 200 -
+2024-07-13 07:40:14,040 - INFO - 127.0.0.1 - - [13/Jul/2024 07:40:14] "GET / HTTP/1.1" 200 -
+2024-07-13 07:44:30,446 - INFO - 127.0.0.1 - - [13/Jul/2024 07:44:30] "GET / HTTP/1.0" 200 -

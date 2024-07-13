@@ -62,23 +62,187 @@
 #     app.run(host='0.0.0.0', port=8080, debug=True)
 
 
-import logging
+# import logging
+# from flask import Flask, request
+# import smtplib
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# from datetime import datetime
+# import os
+# from config import SMTP_HOST, SMTP_USER, SMTP_PASSWORD, EMAILS_FROM_EMAIL, SMTP_TLS, SMTP_SSL, SMTP_PORT
+# from celery import make_celery
+
+
+# app = Flask(__name__)
+
+# app.config.update(
+#     CELERY_BROKER_URL='redis://localhost:6379',
+#     CELERY_RESULT_BACKEND='redis://localhost:6379'
+# )
+
+# celery = make_celery(app)
+
+
+# @app.route('/')
+# def index():
+#     return "Welcome to the Messaging System!"
+
+
+
+# # Configure logging
+# logging.basicConfig(level=logging.INFO,
+#                     format='%(asctime)s - %(levelname)s - %(message)s',
+#                     handlers=[logging.FileHandler('./log/messaging_system.log'),
+#                               logging.StreamHandler()])
+
+
+
+# # @app.route('/sendmail', methods=['GET'])
+# # def send_mail():
+# #     recipient = request.args.get('recipient')
+# #     if not recipient:
+# #         return "Please provide a recipient email address.", 400
+
+# #     # Use the SMTP settings from your configuration
+# #     sender_email = EMAILS_FROM_EMAIL
+# #     receiver_email = recipient
+# #     password = SMTP_PASSWORD
+
+# #     # Create a multipart message and set headers
+# #     message = MIMEMultipart()
+# #     message["From"] = sender_email
+# #     message["To"] = receiver_email
+# #     message["Subject"] = "Hello from Flask App"
+
+# #     # Add plain-text and HTML version of your message
+# #     message.attach(MIMEText("This is a test email sent from a Flask application.", "plain"))
+# #     message.attach(MIMEText("<p>This is a test email sent from a Flask application.</p>", "html"))
+
+# #     try:
+# #         server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+# #         server.starttls() if SMTP_TLS else server.startssl()
+# #         server.login(SMTP_USER, password)
+# #         server.send_message(message)  # Use send_message for multipart messages
+# #         server.quit()
+# #         return f"Email sent to {receiver_email}.", 200
+# #     except Exception as e:
+# #         return f"Failed to send email: {str(e)}", 500
+
+
+
+# @celery.task
+# def send_email_task(recipient):
+#     # Use the same logging configuration as your Flask app
+#     logger = logging.getLogger(__name__)
+
+#     sender_email = EMAILS_FROM_EMAIL
+#     password = SMTP_PASSWORD
+
+#     message = MIMEMultipart()
+#     message["From"] = sender_email
+#     message["To"] = recipient
+#     message["Subject"] = "Hello from Flask App"
+
+#     message.attach(MIMEText("This is a test email sent from a Flask application.", "plain"))
+#     message.attach(MIMEText("<p>This is a test email sent from a Flask application.</p>", "html"))
+
+#     try:
+#         server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
+#         server.starttls() if SMTP_TLS else server.startssl()
+#         server.login(SMTP_USER, password)
+#         server.send_message(message)
+#         server.quit()
+#         logger.info(f"Email sent to {recipient}.")
+#         return f"Email sent to {recipient}."
+#     except Exception as e:
+#         logger.error(f"Failed to send email: {str(e)}")
+#         return f"Failed to send email: {str(e)}"
+
+
+        
+
+# @app.route('/sendmail', methods=['GET'])
+# def send_mail():
+#     recipient = request.args.get('recipient')
+#     if not recipient:
+#         return "Please provide a recipient email address.", 400
+
+#     result = send_email_task.delay(recipient)
+#     return f"Email task queued for {recipient}.", 202
+
+
+# @celery.task
+# def log_event(message):
+#     logger = logging.getLogger(__name__)
+#     logger.info(message)
+#     return f"Log event '{message}' processed."
+
+
+# # @app.route('/talktome', methods=['GET'])
+# # def talk_to_me():
+# #     # Log the event
+# #     logging.info("Talk to Me endpoint accessed.")
+# #     return "Logged successfully."
+
+
+# @app.route('/talktome', methods=['GET'])
+# def talk_to_me():
+#     # Enqueue the logging task
+#     result = log_event.delay("Talk to Me endpoint accessed.")
+    
+#     # Optionally, you can wait for the task to finish and get its result
+#     # This is not necessary for most use cases, as the primary goal is to offload the task
+#     # result = AsyncResult(result.task_id).get(timeout=10)
+    
+#     return "Logged successfully."
+
+
+
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=8080, debug=True)
+
+
 from flask import Flask, request
-import smtplib
+import logging
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
 import os
 from config import SMTP_HOST, SMTP_USER, SMTP_PASSWORD, EMAILS_FROM_EMAIL, SMTP_TLS, SMTP_SSL, SMTP_PORT
+from celery import Celery
+from celery import shared_task
+
+@shared_task
+def send_email(recipient):
+    print(f"Sending email to {recipient}")
+    # Placeholder for actual email sending logic
+    return f"Email task simulated for {recipient}"
+
 
 app = Flask(__name__)
 
+app.config.update(
+    CELERY_BROKER_URL='amqp://guest:guest@localhost',  # Updated to use RabbitMQ
+    CELERY_RESULT_BACKEND='rpc://'
+)
+
+# Directly instantiate Celery without using make_celery
+celery = Celery(
+    app.name,
+    broker=app.config['CELERY_BROKER_URL'],
+    result_backend=app.config['CELERY_RESULT_BACKEND']
+)
+
+# Update the Celery configuration with the Flask app's config
+celery.conf.update(app.config)
+
+
+# Ensure Celery knows about our tasks
+celery.autodiscover_tasks(['tasks'], force=True)
 
 @app.route('/')
 def index():
     return "Welcome to the Messaging System!"
-
-
 
 # Configure logging
 logging.basicConfig(level=logging.INFO,
@@ -86,26 +250,16 @@ logging.basicConfig(level=logging.INFO,
                     handlers=[logging.FileHandler('./log/messaging_system.log'),
                               logging.StreamHandler()])
 
-
-
-@app.route('/sendmail', methods=['GET'])
-def send_mail():
-    recipient = request.args.get('recipient')
-    if not recipient:
-        return "Please provide a recipient email address.", 400
-
-    # Use the SMTP settings from your configuration
+@celery.task
+def send_email_task(recipient):
     sender_email = EMAILS_FROM_EMAIL
-    receiver_email = recipient
     password = SMTP_PASSWORD
 
-    # Create a multipart message and set headers
     message = MIMEMultipart()
     message["From"] = sender_email
-    message["To"] = receiver_email
+    message["To"] = recipient
     message["Subject"] = "Hello from Flask App"
 
-    # Add plain-text and HTML version of your message
     message.attach(MIMEText("This is a test email sent from a Flask application.", "plain"))
     message.attach(MIMEText("<p>This is a test email sent from a Flask application.</p>", "html"))
 
@@ -113,24 +267,31 @@ def send_mail():
         server = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
         server.starttls() if SMTP_TLS else server.startssl()
         server.login(SMTP_USER, password)
-        server.send_message(message)  # Use send_message for multipart messages
+        server.send_message(message)
         server.quit()
-        return f"Email sent to {receiver_email}.", 200
+        return f"Email sent to {recipient}."
     except Exception as e:
-        return f"Failed to send email: {str(e)}", 500
+        return f"Failed to send email: {str(e)}"
 
+@app.route('/sendmail', methods=['GET'])
+def send_mail():
+    recipient = request.args.get('recipient')
+    if not recipient:
+        return "Please provide a recipient email address.", 400
 
+    result = send_email_task.delay(recipient)
+    return f"Email task queued for {recipient}.", 202
+
+@celery.task
+def log_event(message):
+    logger = logging.getLogger(__name__)
+    logger.info(message)
+    return f"Log event '{message}' processed."
 
 @app.route('/talktome', methods=['GET'])
 def talk_to_me():
-    # Log the event
-    logging.info("Talk to Me endpoint accessed.")
+    result = log_event.delay("Talk to Me endpoint accessed.")
     return "Logged successfully."
-
-
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
-
-
