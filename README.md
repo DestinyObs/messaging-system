@@ -1,5 +1,3 @@
-Here's a suggested README for your GitHub repository, `messaging-system`:
-
 ---
 
 # Messaging System
