@@ -243,3 +243,32 @@
 2024-07-13 18:03:13,445 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:13] "[35m[1mGET /sendmail?recipient=destiny@destinycodes.com HTTP/1.0[0m" 202 -
 2024-07-13 18:03:13,998 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:13] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
 2024-07-13 18:03:21,298 - INFO - 127.0.0.1 - - [13/Jul/2024 18:03:21] "GET / HTTP/1.0" 200 -
+2024-07-13 22:24:03,927 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 22:24:03,928 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 22:24:03,929 - INFO -  * Restarting with stat
+2024-07-13 22:24:04,180 - WARNING -  * Debugger is active!
+2024-07-13 22:24:04,181 - INFO -  * Debugger PIN: 327-557-617
+2024-07-13 22:24:07,486 - INFO - 127.0.0.1 - - [13/Jul/2024 22:24:07] "GET / HTTP/1.1" 200 -
+2024-07-13 22:24:11,818 - INFO - 127.0.0.1 - - [13/Jul/2024 22:24:11] "[33mGET /logs HTTP/1.1[0m" 404 -
+2024-07-13 22:24:51,434 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 22:24:51,481 - INFO -  * Restarting with stat
+2024-07-13 22:24:51,773 - WARNING -  * Debugger is active!
+2024-07-13 22:24:51,778 - INFO -  * Debugger PIN: 327-557-617
+2024-07-13 22:26:13,544 - INFO - 127.0.0.1 - - [13/Jul/2024 22:26:13] "[31m[1mGET /sendmail?sendmail=destinyobueh14@gmail.com HTTP/1.1[0m" 400 -
+2024-07-13 22:26:18,429 - INFO - 127.0.0.1 - - [13/Jul/2024 22:26:18] "[31m[1mGET /sendmail?sendmail=destinyobueh14@gmail.com HTTP/1.1[0m" 400 -
+2024-07-13 22:26:40,008 - INFO - 127.0.0.1 - - [13/Jul/2024 22:26:40] "GET / HTTP/1.0" 200 -
+2024-07-13 22:26:42,377 - INFO - 127.0.0.1 - - [13/Jul/2024 22:26:42] "GET / HTTP/1.0" 200 -
+2024-07-13 22:26:53,277 - INFO - 127.0.0.1 - - [13/Jul/2024 22:26:53] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 22:27:26,397 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 22:27:26,484 - INFO -  * Restarting with stat
+2024-07-13 22:27:27,081 - WARNING -  * Debugger is active!
+2024-07-13 22:27:27,083 - INFO -  * Debugger PIN: 327-557-617
+2024-07-13 22:29:08,528 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 22:29:08,655 - INFO -  * Restarting with stat
+2024-07-13 22:29:08,942 - WARNING -  * Debugger is active!
+2024-07-13 22:29:08,943 - INFO -  * Debugger PIN: 327-557-617
+2024-07-13 22:41:26,487 - INFO -  * Detected change in '/mnt/c/Users/USER/messaging-system/app.py', reloading
+2024-07-13 22:41:26,541 - INFO -  * Restarting with stat
