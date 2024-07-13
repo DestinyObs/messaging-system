@@ -115,3 +115,36 @@
 2024-07-13 07:39:56,804 - INFO - 127.0.0.1 - - [13/Jul/2024 07:39:56] "GET /talktome HTTP/1.1" 200 -
 2024-07-13 07:40:14,040 - INFO - 127.0.0.1 - - [13/Jul/2024 07:40:14] "GET / HTTP/1.1" 200 -
 2024-07-13 07:44:30,446 - INFO - 127.0.0.1 - - [13/Jul/2024 07:44:30] "GET / HTTP/1.0" 200 -
+2024-07-13 08:11:59,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.30.137.21:8080
+2024-07-13 08:11:59,705 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-13 08:11:59,707 - INFO -  * Restarting with stat
+2024-07-13 08:11:59,953 - WARNING -  * Debugger is active!
+2024-07-13 08:12:00,009 - INFO -  * Debugger PIN: 343-796-946
+2024-07-13 08:12:04,788 - INFO - 127.0.0.1 - - [13/Jul/2024 08:12:04] "GET / HTTP/1.1" 200 -
+2024-07-13 08:12:04,972 - INFO - 127.0.0.1 - - [13/Jul/2024 08:12:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-13 08:12:08,280 - INFO - 127.0.0.1 - - [13/Jul/2024 08:12:08] "GET / HTTP/1.0" 200 -
+2024-07-13 08:12:08,442 - INFO - 127.0.0.1 - - [13/Jul/2024 08:12:08] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 08:12:53,308 - INFO - 127.0.0.1 - - [13/Jul/2024 08:12:53] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:13:03,406 - INFO - 127.0.0.1 - - [13/Jul/2024 08:13:03] "[31m[1mGET /sendmail?sendmail=test@example.com HTTP/1.0[0m" 400 -
+2024-07-13 08:13:15,752 - INFO - 127.0.0.1 - - [13/Jul/2024 08:13:15] "[31m[1mGET /sendmail?sendmail=test@example.com HTTP/1.0[0m" 400 -
+2024-07-13 08:13:29,635 - INFO - 127.0.0.1 - - [13/Jul/2024 08:13:29] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 08:13:58,882 - INFO - 127.0.0.1 - - [13/Jul/2024 08:13:58] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 08:20:46,400 - INFO - 127.0.0.1 - - [13/Jul/2024 08:20:46] "GET / HTTP/1.0" 200 -
+2024-07-13 08:20:46,973 - INFO - 127.0.0.1 - - [13/Jul/2024 08:20:46] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 08:21:32,036 - INFO - 127.0.0.1 - - [13/Jul/2024 08:21:32] "GET / HTTP/1.0" 200 -
+2024-07-13 08:21:52,460 - INFO - 127.0.0.1 - - [13/Jul/2024 08:21:52] "GET / HTTP/1.0" 200 -
+2024-07-13 08:22:37,400 - INFO - 127.0.0.1 - - [13/Jul/2024 08:22:37] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:22:50,263 - INFO - 127.0.0.1 - - [13/Jul/2024 08:22:50] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:23:07,721 - INFO - 127.0.0.1 - - [13/Jul/2024 08:23:07] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:24:06,399 - INFO - 127.0.0.1 - - [13/Jul/2024 08:24:06] "[31m[1mGET /sendmail?sendmail=destinyobueh14@gmail.com HTTP/1.0[0m" 400 -
+2024-07-13 08:24:40,187 - INFO - 127.0.0.1 - - [13/Jul/2024 08:24:40] "[31m[1mGET /sendmail?sendmail=destinyobueh14@gmail.com HTTP/1.0[0m" 400 -
+2024-07-13 08:24:59,540 - INFO - 127.0.0.1 - - [13/Jul/2024 08:24:59] "[31m[1mGET /sendmail?sendmail=destinyobueh14@gmail.com HTTP/1.0[0m" 400 -
+2024-07-13 08:26:08,255 - INFO - 127.0.0.1 - - [13/Jul/2024 08:26:08] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 08:26:18,765 - INFO - 127.0.0.1 - - [13/Jul/2024 08:26:18] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 08:26:51,126 - INFO - 127.0.0.1 - - [13/Jul/2024 08:26:51] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 08:27:10,151 - INFO - 127.0.0.1 - - [13/Jul/2024 08:27:10] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 08:31:38,386 - INFO - 127.0.0.1 - - [13/Jul/2024 08:31:38] "[35m[1mGET /sendmail?recipient=destinyobuh14@gmail.com HTTP/1.1[0m" 202 -
+2024-07-13 08:31:38,414 - INFO - 127.0.0.1 - - [13/Jul/2024 08:31:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
