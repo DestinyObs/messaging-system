@@ -223,3 +223,11 @@
 2024-07-13 10:48:48,063 - INFO - 127.0.0.1 - - [13/Jul/2024 10:48:48] "GET /talktome HTTP/1.0" 200 -
 2024-07-13 10:49:27,208 - INFO - 127.0.0.1 - - [13/Jul/2024 10:49:27] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
 2024-07-13 10:50:22,127 - INFO - 127.0.0.1 - - [13/Jul/2024 10:50:22] "[35m[1mGET /sendmail?recipient=destiny@destinedcodes.com HTTP/1.0[0m" 202 -
+2024-07-13 12:03:15,727 - INFO - 127.0.0.1 - - [13/Jul/2024 12:03:15] "GET / HTTP/1.0" 200 -
+2024-07-13 12:03:16,421 - INFO - 127.0.0.1 - - [13/Jul/2024 12:03:16] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-07-13 12:07:45,744 - INFO - 127.0.0.1 - - [13/Jul/2024 12:07:45] "GET /talktome HTTP/1.0" 200 -
+2024-07-13 12:17:41,104 - INFO - 127.0.0.1 - - [13/Jul/2024 12:17:41] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 12:24:58,013 - INFO - 127.0.0.1 - - [13/Jul/2024 12:24:58] "[35m[1mGET /sendmail?recipient=destinyobueh14@gmail.com HTTP/1.0[0m" 202 -
+2024-07-13 12:26:54,800 - INFO - 127.0.0.1 - - [13/Jul/2024 12:26:54] "[35m[1mGET /sendmail?recipient=destiny@destinycodes.com HTTP/1.0[0m" 202 -
+2024-07-13 12:29:17,574 - INFO - 127.0.0.1 - - [13/Jul/2024 12:29:17] "GET / HTTP/1.0" 200 -
+2024-07-13 12:29:20,048 - INFO - 127.0.0.1 - - [13/Jul/2024 12:29:20] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
