@@ -61,15 +61,6 @@ def send_email_task(recipient):
     except Exception as e:
         return f"Failed to send email: {str(e)}"
 
-# @app.route('/sendmail', methods=['GET'])
-# def send_mail():
-#     recipient = request.args.get('recipient')
-#     if not recipient:
-#         return "Please provide a recipient email address.", 400
-
-#     result = send_email_task.delay(recipient)
-#     return f"Email task queued for {recipient}.", 202
-
 
 # Define the root route handler for the Flask app
 @app.route('/', methods=['GET', 'POST'])
@@ -78,7 +69,7 @@ def index(sendmail=None, talktome=False):
     talktome = request.args.get('talktome')
     # If the 'sendmail' parameter is present, queue an email to be sent
     if sendmail:
-        send_email.delay(sendmail)
+        send_email_task.delay(sendmail)  # Corrected from send_email to send_email_task
         return f"Email queued to be sent to {sendmail}"
     # If the 'talktome' parameter is present, append the current timestamp to the log file
     if talktome:
